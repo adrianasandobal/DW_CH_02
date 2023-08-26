@@ -4,7 +4,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
+body { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
 
 h1 {
     font-family: 'Borel', cursive;
@@ -36,10 +36,10 @@ h1 {
 
 /*** ENLACES ***/
 a {text-decoration: none;}
-a:link {color: #de528c;}
-a:visited {color: #4eb3de;}
+a:link {color: #fcf09f;}
+a:visited {color: black}
 a:hover {color: #8de0a6; padding-bottom: 5px; border-bottom: solid 5px #8de0a6;}
-a:active {color: #f27c7c;}
+a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 /*
 -
 -
@@ -105,6 +105,10 @@ a:active {color: #f27c7c;}
 }
 
 /*** ASIDE ***/
+.card {
+    background: none;
+}
+
 .categorias {
     flex: 0.1;
 }
@@ -223,7 +227,7 @@ a:active {color: #f27c7c;}
     }
     
     .categorias__nav__card .card-link:hover {
-        background-color: white;
+        background: none;
     }
     
     .categorias__nav__card__img {
