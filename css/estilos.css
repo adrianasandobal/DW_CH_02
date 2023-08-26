@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@100;300;500;800&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center_xy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** COLORES ***/
+.fondo_celeste {background-color: #4eb3de;}
+.fondo_verde {background-color: #8de0a6;}
+.fondo_amarillo {background-color: #fcf09f;}
+.fondo_naranja { background-color: #f27c7c;}
+.fondo_fucsia {background-color: #de528c;}
+/*
+-
+-
+*/
+
+/*** HEADER ***/
+.header {
+    height: 20vh;
+}
+/*
+-
+-
+*/
+
+/*** CONTAINER FLUID ***/
+.container-fluid {
+    display: flex;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*** ASIDE ***/
+.aside {
+    flex: 0.1;
+}
+
+/*** MAIN ***/
+.main {
+    flex: auto;
+}
+
+.main_seccion {
+    height: 70vh;
+}
+/*
+-
+-
+*/
+
+/*** FOOTER ***/
+.footer {
+    height: 10vh;
+}
+/*
+-
+-
+*/
+
+/*** @MEDIA QUERIES ***/
+@media (max-width: 1200px) {
+
+    /*** CONTAINER FLUID ***/
+    .container-fluid {
+        display: block;
+    }
+
+    .aside {
+        height: 15%;
+    }
+
+    .main {
+        height: 85%;
+    }
+}
+/*
+-
+-
+*/
