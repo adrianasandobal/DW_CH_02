@@ -30,22 +30,30 @@
             <!-- menú horizontal -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <!--<li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>-->
                     <li class="nav-item">
-                        <a aria-current="page"
-                            href="./secciones/tutoriales.html">TUTORIALES</a>
+                        <a href="./secciones/categorias.html">CATEGORÍAS</a>
                     </li>
+                    
                     <li class="nav-separador"> | </li>
+                    
+                    <li class="nav-item">
+                        <a href="./secciones/niveles.html">NIVELES</a>
+                    </li>
+                    
+                    <li class="nav-separador"> | </li>
+                    
+                    <li class="nav-item">
+                        <a href="./secciones/tutoriales.html">TUTORIALES</a>
+                    </li>
+                    
+                    <li class="nav-separador"> | </li>
+                    
                     <li class="nav-item">
                         <a href="./secciones/cursos.html">CURSOS</a>
                     </li>
+                    
                     <li class="nav-separador"> | </li>
-                    <li class="nav-item">
-                        <a href="./secciones/papeles.html">PAPELES</a>
-                    </li>
-                    <li class="nav-separador"> | </li>
+                    
                     <li class="nav-item">
                         <a href="./secciones/contacto.html">CONTACTO</a>
                     </li>
@@ -65,38 +73,38 @@
 
             <nav class="categorias__nav">
                 <!-- categoría 1 -->
-                <div class="card categorias__nav__card text-center my-5">
+                <div class="card categorias__card text-center my-5">
                     <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_02.png" alt="Icono Corazón" class="card-img-top categorias__nav__card__img pt-1">
-                        <h6 class="card-title categorias__nav__card__nombre">San Valentín</h6>
+                        <img src="./recursos/img/icono_02.png" alt="Icono Corazón" class="card-img-top categorias__img pt-1">
+                        <p class="card-title categorias__nombre">San Valentín</p>
                     </a>
                 </div>
                 <!-- categoría 2 -->
-                <div class="card categorias__nav__card text-center my-5">
+                <div class="card categorias__card text-center my-5">
                     <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_03.png" alt="Icono Barco" class="card-img-top categorias__nav__card__img pt-1">
-                        <h6 class="card-title categorias__nav__card__nombre">Barquitos</h6>
+                        <img src="./recursos/img/icono_03.png" alt="Icono Barco" class="card-img-top categorias__img pt-1">
+                        <p class="card-title categorias__nombre">Barquitos</p>
                     </a>
                 </div>
                 <!-- categoría 3 -->
-                <div class="card categorias__nav__card text-center my-5">
+                <div class="card categorias__card text-center my-5">
                     <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_04.png" alt="Icono Geométrico" class="card-img-top categorias__nav__card__img pt-1">
-                        <h6 class="card-title categorias__nav__card__nombre">Geometría</h6>
+                        <img src="./recursos/img/icono_04.png" alt="Icono Geométrico" class="card-img-top categorias__img pt-1">
+                        <p class="card-title categorias__nombre">Geometría</p>
                     </a>
                 </div>
                 <!-- categoría 4 -->
-                <div class="card categorias__nav__card text-center my-5">
+                <div class="card categorias__card text-center my-5">
                     <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_05.png" alt="Icono Avión" class="card-img-top categorias__nav__card__img pt-1">
-                        <h6 class="card-title categorias__nav__card__nombre">Aviones</h6>
+                        <img src="./recursos/img/icono_05.png" alt="Icono Avión" class="card-img-top categorias__img pt-1">
+                        <p class="card-title categorias__nombre">Aviones</p>
                     </a>
                 </div>
                 <!-- categoría 5 -->
-                <div class="card categorias__nav__card text-center my-5">
+                <div class="card categorias__card text-center my-5">
                     <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_01.png" alt="Icono Pájaro" class="card-img-top categorias__nav__card__img pt-1">
-                        <h6 class="card-title categorias__nav__card__nombre">Pájaros</h6>
+                        <img src="./recursos/img/icono_01.png" alt="Icono Pájaro" class="card-img-top categorias__img pt-1">
+                        <p class="card-title categorias__nombre">Pájaros</p>
                     </a>
                 </div>
             </nav>
@@ -107,7 +115,114 @@
         </aside>
 
         <!-- main -->
-        <main class="main center_xy fondo_fucsia">MAIN</main>
+        <main class="main galeria bg-white">
+            
+            <h2>ANIMALES</h2>
+            
+            <div class="galeria__filtro">
+                <h5 class="pe-2">FILTRAR POR NIVEL:</h5>
+
+                <nav class="galeria__filtro__nivel">
+                    <ul>
+                        <li class="fondo_celeste ">
+                            <a class="link-dark" href="#">MUY FÁCIL</a>
+                        </li>
+                        <li class="fondo_verde">
+                            <a class="link-dark" href="#">FÁCIL</a>
+                        </li>
+                        <li class="fondo_amarillo">
+                            <a class="link-dark" href="#">NEUTRO</a>
+                        </li>
+                        <li class="fondo_lila">
+                            <a class="link-light" href="#">DIFÍCIL</a>
+                        </li>
+                        <li class="fondo_fucsia">
+                            <a class="link-light" href="#">MUY DIFÍCIL</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <section class="galeria__contenedor">
+                <!--figura 1-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel dificil">DIFÍCIL</p>
+                        <p class="nombre">PANDA</p>
+                        <img src="./recursos/img/figura_panda.png" alt="Panda">
+                    </a>
+                </article>
+                
+                <!--figura 2-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel facil">FÁCIL</p>
+                        <p class="nombre">OSO</p>
+                        <img src="./recursos/img/figura_oso.png" alt="Oso">
+                    </a>
+                </article>
+                
+                <!--figura 3-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel muyFacil">MUY FÁCIL</p>
+                        <p class="nombre">CONEJO</p>
+                        <img src="./recursos/img/figura_conejo.png" alt="Conejo">
+                    </a>
+                </article>
+                
+                <!--figura 4-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel muyFacil">MUY FÁCIL</p>
+                        <p class="nombre">PERRITO</p>
+                        <img src="./recursos/img/figura_perrito.png" alt="Perrito">
+                    </a>
+                </article>
+                
+                <!--figura 5-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel facil">FÁCIL</p>
+                        <p class="nombre">FLAMENCO</p>
+                        <img src="./recursos/img/figura_flamenco.png" alt="Flamenco">
+                    </a>
+                </article>
+                
+                <!--figura 6-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel neutro">NEUTRO</p>
+                        <p class="nombre">CHANCHO</p>
+                        <img src="./recursos/img/figura_chancho.png" alt="Chancho">
+                    </a>
+                </article>
+                
+                <!--figura 7-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel muyDificil">MUY DIFÍCIL</p>
+                        <p class="nombre">RATÓN</p>
+                        <img src="./recursos/img/figura_raton.png" alt="Ratón">
+                    </a>
+                </article>
+                
+                <!--figura 8-->
+                <article class="figura">
+                    <a class="enlace" href="#" target="_self">
+                        <p class="nivel dificil">DIFÍCIL</p>
+                        <p class="nombre">PERRO</p>
+                        <img src="./recursos/img/figura_perro.png" alt="Perro">
+                    </a>
+                </article>
+                
+            </section>
+            
+            <div class="galeria__boton">
+                <button>CARGAR MÁS FIGURAS</button>
+            </div>
+            
+        </main>
     </div>
 
 
