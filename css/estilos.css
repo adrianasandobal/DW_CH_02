@@ -9,6 +9,7 @@ body { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
 
 h1 { font-family: 'Borel', cursive; font-weight: 300; }
 h2 { font-size: 3rem; font-weight: 300; color: #de528c; text-transform: uppercase; }
+h3 { font-family: 'Borel', cursive; font-weight: 300; }
 h5 { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; }
 
 button {
@@ -39,12 +40,6 @@ button:hover {
 .fondo_amarillo {background-color: #fcf09f;}
 .fondo_lila { background-color: #b490ca;}
 .fondo_fucsia {background-color: #de528c;}
-
-.texto_celeste {color: #5ee7df;}
-.texto_verde {color: #8de0a6;}
-.texto_amarillo {color: #fcf09f;}
-.texto_lila {color: #b490ca;}
-.texto_fucsia {color: #de528c;}
 
 
 /*** ENLACES ***/
@@ -126,7 +121,7 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     background: none;
 }
 
-.categorias {
+.aside {
     flex: 0.1;
 }
 
@@ -261,7 +256,21 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 .main_seccion {
     height: 70vh;
+    margin: 0 10rem;
 }
+
+.main_seccion .tabs_niveles .nav-tabs .nav-link { color: black; }
+
+.main_seccion .tabs_niveles .nav-tabs .nav-link:hover {
+    border: solid 1px black;
+}
+
+.main_seccion .tabs_niveles .nav-tabs .fondo_celeste:hover {background-color: #5ee7df;}
+.main_seccion .tabs_niveles .nav-tabs .fondo_verde:hover {background-color: #8de0a6;}
+.main_seccion .tabs_niveles .nav-tabs .fondo_amarillo:hover {background-color: #fcf09f;}
+.main_seccion .tabs_niveles .nav-tabs .fondo_lila:hover {background-color: #b490ca;}
+.main_seccion .tabs_niveles .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
+
 /*
 -
 -
@@ -280,13 +289,13 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 /***********************/
 /*** @MEDIA QUERIES ***/
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     h1 {font-size: 2rem;}
     
     /*** HEADER ***/
     .header {
-        height: 15vh;
+        height: 13vh;
     }
     
     .header .navbar {
@@ -308,23 +317,31 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     }
 
     /*** ASIDE ***/
-    .categorias {
-        height: 15%;
+    .aside {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         border-top: solid 1px;
+        padding: 0 30px;
+        height: 10vh;
     }
     
-    .categorias h5 {
-        font-size: 1rem;
+    .aside h5 {
         text-align: left;
-        padding-left: 1rem;
+        padding: 1.5rem 0 0 0;
+    }
+    
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        height: 50px;
     }
     
     .categorias__flecha {
-        width: 10%;
         border-top: none;
         border-bottom: none;
+        width: 3%;
     }
     
     .categorias__flecha--izquierda img {
@@ -337,8 +354,13 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
         border: solid 1px;
     }
     
+    .categorias__flecha--izquierda img:hover,
+    .categorias__flecha--derecha img:hover {
+        background-color: #8de0a6;
+    }
+    
     .categorias__nav {
-        width: 90%;
+        width: 94%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -350,12 +372,11 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     }
     
     .categorias__img {
-        width: 2rem;
+        width: 3rem;
     }
     
     .categorias__img:hover {
-        padding-bottom: 5px;
-        border-bottom: solid 5px #8de0a6;
+        background-color: #8de0a6;
     }
     
     .categorias__nombre {
@@ -379,9 +400,19 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     .galeria__contenedor .figura {
         width: 33.3%;
     }
+    
+    .main_seccion {
+        height: 100%;
+        margin: 0 5rem;
+    }
 }
 
 @media (max-width: 960px) {
+    
+    /*** ASIDE ***/
+    .categorias__img {
+        width: 2rem;
+    }
     
     /*** MAIN ***/
     .galeria__contenedor .figura {
@@ -390,6 +421,10 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     
     .galeria__filtro__nivel ul {
         display: flex;
+    }
+    
+    .main_seccion {
+        margin: 0 2rem;
     }
     
 }
@@ -423,6 +458,16 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     
     .galeria__contenedor .figura {
         width: 100%;
+    }
+    
+    .main_seccion {
+        border-top: solid 1px black;
+        padding-top: 20px;
+        margin: 0 1rem;
+    }
+    
+    .main_seccion .tabs_niveles .nav-tabs .nav-link {
+        padding: 5px;
     }
 }
 /*

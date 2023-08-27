@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Origamisando</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Origamisando</title>
 </head>
 
 <body>
@@ -23,39 +23,40 @@
                 <h1>Origamisando</h1>
             </a>
             <!-- menú hamburguesa -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- menú horizontal -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="./secciones/categorias.html">CATEGORÍAS</a>
+                        <a class="nav-link" href="./secciones/categorias.html">CATEGORÍAS</a>
                     </li>
                     
                     <li class="nav-separador"> | </li>
                     
                     <li class="nav-item">
-                        <a href="./secciones/niveles.html">NIVELES</a>
+                        <a class="nav-link" href="./secciones/niveles.html">NIVELES</a>
                     </li>
                     
                     <li class="nav-separador"> | </li>
                     
                     <li class="nav-item">
-                        <a href="./secciones/tutoriales.html">TUTORIALES</a>
+                        <a class="nav-link" href="./secciones/tutoriales.html">TUTORIALES</a>
                     </li>
                     
                     <li class="nav-separador"> | </li>
                     
                     <li class="nav-item">
-                        <a href="./secciones/cursos.html">CURSOS</a>
+                        <a class="nav-link" href="./secciones/cursos.html">CURSOS</a>
                     </li>
                     
                     <li class="nav-separador"> | </li>
                     
                     <li class="nav-item">
-                        <a href="./secciones/contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="./secciones/contacto.html">CONTACTO</a>
                     </li>
                 </ul>
             </div>
@@ -64,54 +65,59 @@
 
     <div class="container-fluid">
         <!-- aside -->
-        <aside class="aside categorias text-center">
+        <aside class="aside text-center">
             <h5>LISTA DE CATEGORÍAS</h5>
+            
+            <section class="categorias">
+                
+                <div class="categorias__flecha categorias__flecha--izquierda">
+                    <img class="categorias__flecha__img" src="./recursos/img/flecha-hacia-arriba.png" alt="flecha arriba">
+                </div>
 
-            <div class="categorias__flecha categorias__flecha--izquierda">
-                <img class="categorias__flecha__img" src="./recursos/img/flecha-hacia-arriba.png" alt="flecha arriba">
-            </div>
+                <nav class="categorias__nav">
+                    <!-- categoría 1 -->
+                    <div class="card categorias__card text-center my-5">
+                        <a href="#" class="card-link">
+                            <img src="./recursos/img/icono_02.png" alt="Icono Corazón" class="card-img-top categorias__img pt-1">
+                            <p class="card-title categorias__nombre">San Valentín</p>
+                        </a>
+                    </div>
+                    <!-- categoría 2 -->
+                    <div class="card categorias__card text-center my-5">
+                        <a href="#" class="card-link">
+                            <img src="./recursos/img/icono_03.png" alt="Icono Barco" class="card-img-top categorias__img pt-1">
+                            <p class="card-title categorias__nombre">Barquitos</p>
+                        </a>
+                    </div>
+                    <!-- categoría 3 -->
+                    <div class="card categorias__card text-center my-5">
+                        <a href="#" class="card-link">
+                            <img src="./recursos/img/icono_04.png" alt="Icono Geométrico" class="card-img-top categorias__img pt-1">
+                            <p class="card-title categorias__nombre">Geometría</p>
+                        </a>
+                    </div>
+                    <!-- categoría 4 -->
+                    <div class="card categorias__card text-center my-5">
+                        <a href="#" class="card-link">
+                            <img src="./recursos/img/icono_05.png" alt="Icono Avión" class="card-img-top categorias__img pt-1">
+                            <p class="card-title categorias__nombre">Aviones</p>
+                        </a>
+                    </div>
+                    <!-- categoría 5 -->
+                    <div class="card categorias__card text-center my-5">
+                        <a href="#" class="card-link">
+                            <img src="./recursos/img/icono_01.png" alt="Icono Pájaro" class="card-img-top categorias__img pt-1">
+                            <p class="card-title categorias__nombre">Pájaros</p>
+                        </a>
+                    </div>
+                </nav>
 
-            <nav class="categorias__nav">
-                <!-- categoría 1 -->
-                <div class="card categorias__card text-center my-5">
-                    <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_02.png" alt="Icono Corazón" class="card-img-top categorias__img pt-1">
-                        <p class="card-title categorias__nombre">San Valentín</p>
-                    </a>
+                <div class="categorias__flecha categorias__flecha--derecha">
+                    <img class="categorias__flecha__img" src="./recursos/img/flecha-hacia-abajo.png" alt="flecha abajo">
                 </div>
-                <!-- categoría 2 -->
-                <div class="card categorias__card text-center my-5">
-                    <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_03.png" alt="Icono Barco" class="card-img-top categorias__img pt-1">
-                        <p class="card-title categorias__nombre">Barquitos</p>
-                    </a>
-                </div>
-                <!-- categoría 3 -->
-                <div class="card categorias__card text-center my-5">
-                    <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_04.png" alt="Icono Geométrico" class="card-img-top categorias__img pt-1">
-                        <p class="card-title categorias__nombre">Geometría</p>
-                    </a>
-                </div>
-                <!-- categoría 4 -->
-                <div class="card categorias__card text-center my-5">
-                    <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_05.png" alt="Icono Avión" class="card-img-top categorias__img pt-1">
-                        <p class="card-title categorias__nombre">Aviones</p>
-                    </a>
-                </div>
-                <!-- categoría 5 -->
-                <div class="card categorias__card text-center my-5">
-                    <a href="#" class="card-link">
-                        <img src="./recursos/img/icono_01.png" alt="Icono Pájaro" class="card-img-top categorias__img pt-1">
-                        <p class="card-title categorias__nombre">Pájaros</p>
-                    </a>
-                </div>
-            </nav>
 
-            <div class="categorias__flecha categorias__flecha--derecha">
-                <img class="categorias__flecha__img" src="./recursos/img/flecha-hacia-abajo.png" alt="flecha abajo">
-            </div>
+            </section>
+            
         </aside>
 
         <!-- main -->
@@ -124,7 +130,7 @@
 
                 <nav class="galeria__filtro__nivel">
                     <ul>
-                        <li class="fondo_celeste ">
+                        <li class="fondo_celeste">
                             <a class="link-dark" href="#">MUY FÁCIL</a>
                         </li>
                         <li class="fondo_verde">
@@ -147,7 +153,7 @@
                 <!--figura 1-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel dificil">DIFÍCIL</p>
+                        <p class="badge rounded-pill nivel dificil">DIFÍCIL</p>
                         <p class="nombre">PANDA</p>
                         <img src="./recursos/img/figura_panda.png" alt="Panda">
                     </a>
@@ -156,7 +162,7 @@
                 <!--figura 2-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel facil">FÁCIL</p>
+                        <p class="badge rounded-pill nivel facil">FÁCIL</p>
                         <p class="nombre">OSO</p>
                         <img src="./recursos/img/figura_oso.png" alt="Oso">
                     </a>
@@ -165,7 +171,7 @@
                 <!--figura 3-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel muyFacil">MUY FÁCIL</p>
+                        <p class="badge rounded-pill nivel muyFacil">MUY FÁCIL</p>
                         <p class="nombre">CONEJO</p>
                         <img src="./recursos/img/figura_conejo.png" alt="Conejo">
                     </a>
@@ -174,7 +180,7 @@
                 <!--figura 4-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel muyFacil">MUY FÁCIL</p>
+                        <p class="badge rounded-pill nivel muyFacil">MUY FÁCIL</p>
                         <p class="nombre">PERRITO</p>
                         <img src="./recursos/img/figura_perrito.png" alt="Perrito">
                     </a>
@@ -183,7 +189,7 @@
                 <!--figura 5-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel facil">FÁCIL</p>
+                        <p class="badge rounded-pill nivel facil">FÁCIL</p>
                         <p class="nombre">FLAMENCO</p>
                         <img src="./recursos/img/figura_flamenco.png" alt="Flamenco">
                     </a>
@@ -192,7 +198,7 @@
                 <!--figura 6-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel neutro">NEUTRO</p>
+                        <p class="badge rounded-pill nivel neutro">NEUTRO</p>
                         <p class="nombre">CHANCHO</p>
                         <img src="./recursos/img/figura_chancho.png" alt="Chancho">
                     </a>
@@ -201,7 +207,7 @@
                 <!--figura 7-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel muyDificil">MUY DIFÍCIL</p>
+                        <p class="badge rounded-pill nivel muyDificil">MUY DIFÍCIL</p>
                         <p class="nombre">RATÓN</p>
                         <img src="./recursos/img/figura_raton.png" alt="Ratón">
                     </a>
@@ -210,7 +216,7 @@
                 <!--figura 8-->
                 <article class="figura">
                     <a class="enlace" href="#" target="_self">
-                        <p class="nivel dificil">DIFÍCIL</p>
+                        <p class="badge rounded-pill nivel dificil">DIFÍCIL</p>
                         <p class="nombre">PERRO</p>
                         <img src="./recursos/img/figura_perro.png" alt="Perro">
                     </a>
