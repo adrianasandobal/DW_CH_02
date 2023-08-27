@@ -259,6 +259,11 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     margin: 0 10rem;
 }
 
+.main_seccion--tutoriales {
+    height: 100%;
+    margin: 0 10rem;
+}
+
 .main_seccion .tabs_niveles .nav-tabs .nav-link { color: black; }
 
 .main_seccion .tabs_niveles .nav-tabs .nav-link:hover {
@@ -270,6 +275,44 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 .main_seccion .tabs_niveles .nav-tabs .fondo_amarillo:hover {background-color: #fcf09f;}
 .main_seccion .tabs_niveles .nav-tabs .fondo_lila:hover {background-color: #b490ca;}
 .main_seccion .tabs_niveles .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
+
+.main_seccion--tutoriales .bloque_tutoriales h3 {
+    border-bottom: solid 1px black;
+}
+
+.main_seccion--tutoriales .bloque_tutoriales {
+    margin-bottom: 50px;
+}
+
+.main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales .ficha {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales .ficha .nivel {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+}
+
+.main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales .ficha iframe {
+    width: 100%;
+    height: auto;
+}
+
+.main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales .ficha p {
+    font-weight: 800;
+}
 
 /*
 -
@@ -401,9 +444,15 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
         width: 33.3%;
     }
     
-    .main_seccion {
+    .main_seccion,
+    .main_seccion--tutoriales {
         height: 100%;
         margin: 0 5rem;
+    }
+    
+    .main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales {
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
     }
 }
 
@@ -423,8 +472,13 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
         display: flex;
     }
     
-    .main_seccion {
+    .main_seccion,
+    .main_seccion--tutoriales {
         margin: 0 2rem;
+    }
+    
+    .main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales {
+        grid-template-columns: auto;
     }
     
 }
