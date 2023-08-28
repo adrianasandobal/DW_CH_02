@@ -284,33 +284,34 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     margin: 0 10rem;
 }
 
-.main_seccion--tutoriales {
+.main_seccion--tutoriales,
+.main_seccion--cursos {
     height: 100%;
     margin: 0 10rem;
 }
 
 .main_seccion .tabs_niveles .nav-tabs .nav-link,
-.main_seccion .tabs_cursos .nav-tabs .nav-link {
+.main_seccion--cursos .tabs_cursos .nav-tabs .nav-link {
     color: black;
 }
 
 .main_seccion .tabs_niveles .nav-tabs .nav-link:hover,
-.main_seccion .tabs_cursos .nav-tabs .nav-link:hover {
+.main_seccion--cursos .tabs_cursos .nav-tabs .nav-link:hover {
     border: solid 1px black;
 }
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_celeste:hover {background-color: #5ee7df;}
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_verde:hover,
-.main_seccion .tabs_cursos .nav-tabs .fondo_verde:hover {background-color: #8de0a6;}
+.main_seccion--cursos .tabs_cursos .nav-tabs .fondo_verde:hover {background-color: #8de0a6;}
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_amarillo:hover,
-.main_seccion .tabs_cursos .nav-tabs .fondo_amarillo:hover{background-color: #fcf09f;}
+.main_seccion--cursos .tabs_cursos .nav-tabs .fondo_amarillo:hover{background-color: #fcf09f;}
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_lila:hover {background-color: #b490ca;}
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_fucsia:hover,
-.main_seccion .tabs_cursos .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
+.main_seccion--cursos .tabs_cursos .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
 
 .main_seccion--tutoriales .bloque_tutoriales h3 {
     border-bottom: solid 1px black;
@@ -490,7 +491,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     }
     
     .main_seccion,
-    .main_seccion--tutoriales {
+    .main_seccion--tutoriales,
+    .main_seccion--cursos{
         height: 100%;
         margin: 0 5rem;
     }
@@ -523,7 +525,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     }
     
     .main_seccion,
-    .main_seccion--tutoriales {
+    .main_seccion--tutoriales,
+    .main_seccion--cursos{
         margin: 0 2rem;
     }
     
