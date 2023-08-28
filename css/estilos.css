@@ -52,10 +52,10 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 /*** NIVELES ***/
 .muyFacil { background-color: #5ee7df; color: black; }
-.facil { background-color: #8de0a6; color: black; }
+.facil, .taller { background-color: #8de0a6; color: black; }
 .neutro { background-color: #fcf09f; color: black; }
 .dificil { background-color: #b490ca; color: white; }
-.muyDificil { background-color: #de528c; color: white; }
+.muyDificil, .curso { background-color: #de528c; color: white; }
 /*
 -
 -
@@ -254,6 +254,31 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     margin-bottom: 20px;
 }
 
+.cursos .galeria__contenedor .ficha {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding: 0 20px 20px 0;
+    overflow: hidden;
+}
+
+.cursos .galeria__contenedor .ficha .curso,
+.cursos .galeria__contenedor .ficha .taller {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transform: translate(-2%, -2%);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.cursos .galeria__contenedor .ficha img {
+    width: 60%;
+    height: auto;
+}
+
 .main_seccion {
     height: 70vh;
     margin: 0 10rem;
@@ -264,17 +289,28 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     margin: 0 10rem;
 }
 
-.main_seccion .tabs_niveles .nav-tabs .nav-link { color: black; }
+.main_seccion .tabs_niveles .nav-tabs .nav-link,
+.main_seccion .tabs_cursos .nav-tabs .nav-link {
+    color: black;
+}
 
-.main_seccion .tabs_niveles .nav-tabs .nav-link:hover {
+.main_seccion .tabs_niveles .nav-tabs .nav-link:hover,
+.main_seccion .tabs_cursos .nav-tabs .nav-link:hover {
     border: solid 1px black;
 }
 
 .main_seccion .tabs_niveles .nav-tabs .fondo_celeste:hover {background-color: #5ee7df;}
-.main_seccion .tabs_niveles .nav-tabs .fondo_verde:hover {background-color: #8de0a6;}
-.main_seccion .tabs_niveles .nav-tabs .fondo_amarillo:hover {background-color: #fcf09f;}
+
+.main_seccion .tabs_niveles .nav-tabs .fondo_verde:hover,
+.main_seccion .tabs_cursos .nav-tabs .fondo_verde:hover {background-color: #8de0a6;}
+
+.main_seccion .tabs_niveles .nav-tabs .fondo_amarillo:hover,
+.main_seccion .tabs_cursos .nav-tabs .fondo_amarillo:hover{background-color: #fcf09f;}
+
 .main_seccion .tabs_niveles .nav-tabs .fondo_lila:hover {background-color: #b490ca;}
-.main_seccion .tabs_niveles .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
+
+.main_seccion .tabs_niveles .nav-tabs .fondo_fucsia:hover,
+.main_seccion .tabs_cursos .nav-tabs .fondo_fucsia:hover {background-color: #de528c;}
 
 .main_seccion--tutoriales .bloque_tutoriales h3 {
     border-bottom: solid 1px black;
@@ -332,6 +368,15 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 /***********************/
 /*** @MEDIA QUERIES ***/
+
+@media (max-width: 1800px) {
+    /*** MAIN ***/
+    .cursos .galeria__contenedor .ficha {
+        width: 25%;
+        padding: 0 10px 20px 0;
+    }
+}
+
 @media (max-width: 1400px) {
 
     h1 {font-size: 2rem;}
@@ -454,9 +499,14 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
         grid-template-columns: auto auto;
         grid-gap: 5px;
     }
+    
+    .cursos .galeria__contenedor .ficha {
+        width: 33.3%;
+        padding: 0 10px 20px 0;
+    }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
     
     /*** ASIDE ***/
     .categorias__img {
@@ -481,6 +531,9 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
         grid-template-columns: auto;
     }
     
+    .cursos .galeria__contenedor .ficha {
+        width: 50%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -522,6 +575,11 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     
     .main_seccion .tabs_niveles .nav-tabs .nav-link {
         padding: 5px;
+    }
+    
+    .cursos .galeria__contenedor .ficha {
+        width: 100%;
+        padding: 0 0 20px 0;
     }
 }
 /*
