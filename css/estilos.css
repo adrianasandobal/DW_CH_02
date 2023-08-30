@@ -12,7 +12,8 @@ h2 { font-size: 3rem; font-weight: 300; color: #de528c; text-transform: uppercas
 h3 { font-family: 'Borel', cursive; font-weight: 300; }
 h5 { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; }
 
-button {
+button,
+.boton_input {
     border: none;
     background-color: #de528c;
     color: white;
@@ -23,7 +24,8 @@ button {
     margin-top: 2rem;
 }
 
-button:hover {
+button:hover,
+.boton_input:hover {
     background-color: #8de0a6;
     color: black;
 }
@@ -285,7 +287,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 }
 
 .main_seccion--tutoriales,
-.main_seccion--cursos {
+.main_seccion--cursos,
+.main_seccion--contacto {
     height: 100%;
     margin: 0 10rem;
 }
@@ -349,6 +352,46 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 .main_seccion--tutoriales .bloque_tutoriales .contenedor_tutoriales .ficha p {
     font-weight: 800;
+}
+
+.main_seccion--contacto {
+    height: 70vh;
+}
+
+.main_seccion--contacto h2 {
+    /*???*/
+}
+
+.main_seccion--contacto .contenedor {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.main_seccion--contacto .contenedor article {
+    flex: 1;
+}
+
+.main_seccion--contacto .contenedor .formulario {
+    padding-right: 10rem;
+}
+
+.main_seccion--contacto .contenedor article .form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.main_seccion--contacto .contenedor article h3 {
+    margin-bottom: 2rem;
+}
+
+.main_seccion--contacto .contenedor article .form div label {
+    font-family: 'Borel', cursive;
+    font-size: 1.3rem;;
+}
+
+.main_seccion--contacto .contenedor article .form div input {
+    height: 3rem;
 }
 
 /*
@@ -492,7 +535,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     
     .main_seccion,
     .main_seccion--tutoriales,
-    .main_seccion--cursos{
+    .main_seccion--cursos,
+    .main_seccion--contacto {
         height: 100%;
         margin: 0 5rem;
     }
@@ -526,7 +570,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
     
     .main_seccion,
     .main_seccion--tutoriales,
-    .main_seccion--cursos{
+    .main_seccion--cursos,
+    .main_seccion--contacto {
         margin: 0 2rem;
     }
     
