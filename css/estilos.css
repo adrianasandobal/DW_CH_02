@@ -10,6 +10,7 @@ body { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
 h1 { font-family: 'Borel', cursive; font-weight: 300; }
 h2 { font-size: 3rem; font-weight: 300; color: #de528c; text-transform: uppercase; }
 h3 { font-family: 'Borel', cursive; font-weight: 300; }
+h4 { font-family: 'Borel', cursive; font-weight: 300; color: #de528c; }
 h5 { font-size: 0.9rem; font-weight: 800; text-transform: uppercase; }
 
 button,
@@ -283,7 +284,8 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 
 .main_seccion {
     height: 70vh;
-    margin: 0 10rem;
+    margin: auto;
+    padding: 0 10rem;
 }
 
 .main_seccion--tutoriales,
@@ -291,6 +293,20 @@ a:active {color: black; padding-bottom: 5px; border-bottom: solid 5px black;}
 .main_seccion--contacto {
     height: 100%;
     margin: 0 10rem;
+}
+
+.main_seccion .carrusel {
+    display: flex;
+    justify-content: center;
+}
+
+.main_seccion #carouselExampleDark {
+    width: 50%;
+    background-color: white;
+}
+
+.main_seccion #carouselExampleDark .carousel-inner .carousel-item img {
+    margin: auto;
 }
 
 .main_seccion .tabs_niveles .nav-tabs .nav-link,
