@@ -1,4 +1,4 @@
-button, .boton_input {
+button {
     border: none;
     background-color: $light_pink;
     color: #ffffff;
@@ -15,4 +15,9 @@ button, .boton_input {
         /* animación */
         transform: scale(1.1);
     }
+}
+
+.boton_input {
+    @extend button;
+    margin-top: 0;
 }

@@ -1,50 +1,45 @@
 @charset "UTF-8";
-/* VARIABLES / TIPOGRAFÍAS / COMPONENTES / RESETEO */
+/* VARIABLES y COMPONENTES */
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@100;300;500;800&display=swap");
-/*** FONDOS ***/
-.fondo_celeste {
+.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_celeste:hover, .muyFacil, .fondo_celeste {
   background-color: #5ee7df;
 }
 
-.fondo_verde {
+.main_cursos .cursos .galeria__contenedor .ficha a:hover, .main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_verde:hover, .main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_verde:hover, .container-fluid .aside .categorias .categorias__nav .categorias__card .card-link:hover, .facil, .taller, .fondo_verde {
   background-color: #8de0a6;
 }
 
-.fondo_amarillo {
+.main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_amarillo:hover, .main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_amarillo:hover, .neutro, .fondo_amarillo {
   background-color: #fcf09f;
 }
 
-.fondo_lila {
+.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_lila:hover, .dificil, .fondo_lila {
   background-color: #b490ca;
 }
 
-.fondo_fucsia {
+.main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_fucsia:hover, .main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_fucsia:hover, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-indicators .active, .muyDificil, .curso, .fondo_fucsia {
   background-color: #de528c;
 }
 
+/*** FONDOS ***/
 /*** NIVELES ***/
 .muyFacil {
-  background-color: #5ee7df;
   color: #000000;
 }
 
 .facil, .taller {
-  background-color: #8de0a6;
   color: #000000;
 }
 
 .neutro {
-  background-color: #fcf09f;
   color: #000000;
 }
 
 .dificil {
-  background-color: #b490ca;
   color: #ffffff;
 }
 
 .muyDificil, .curso {
-  background-color: #de528c;
   color: #ffffff;
 }
 
@@ -86,6 +81,10 @@ button:hover, .boton_input:hover {
   color: #000000;
   /* animación */
   transform: scale(1.1);
+}
+
+.boton_input {
+  margin-top: 0;
 }
 
 .galeria__contenedor .figura {
@@ -158,7 +157,12 @@ button:hover, .boton_input:hover {
   object-fit: contain;
 }
 
-/* probando */
+.main_contacto, .main_cursos, .main_tutoriales, .main_niveles, .main_categorias {
+  height: 70vh;
+  margin: auto;
+  padding: 0 10rem;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -168,10 +172,11 @@ body {
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
 }
 
-h1 {
+h4, h3, h1 {
   font-family: "Borel", cursive;
   font-weight: 300;
 }
+
 @media screen and (max-width: 1400px) {
   h1 {
     font-size: 2rem;
@@ -185,14 +190,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-  font-family: "Borel", cursive;
-  font-weight: 300;
-}
-
 h4 {
-  font-family: "Borel", cursive;
-  font-weight: 300;
   color: #de528c;
 }
 
@@ -246,6 +244,21 @@ h5 {
 .header .navbar .navbar-brand img {
   max-width: 9rem;
   margin-right: 1rem;
+}
+.header .navbar .navbar-brand img:hover {
+  /* animación */
+  animation: rotate-scale-down-diag-1 1s linear both;
+}
+@keyframes rotate-scale-down-diag-1 {
+  0% {
+    transform: scale(1) rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+  }
+  100% {
+    transform: scale(1) rotate3d(1, 1, 0, -360deg);
+  }
 }
 @media screen and (max-width: 1400px) {
   .header .navbar .navbar-brand img {
@@ -350,7 +363,6 @@ h5 {
   color: #000000;
 }
 .container-fluid .aside .categorias .categorias__nav .categorias__card .card-link:hover {
-  background-color: #8de0a6;
   border: none;
   /* animación */
   transition: background-color 0.3s;
@@ -449,11 +461,6 @@ h5 {
   margin-bottom: 2rem;
 }
 
-.main_categorias {
-  height: 70vh;
-  margin: auto;
-  padding: 0 10rem;
-}
 @media screen and (max-width: 1400px) {
   .main_categorias {
     height: 77vh;
@@ -483,9 +490,6 @@ h5 {
   width: 100%;
   background-color: #ffffff;
 }
-.main_categorias .contenedor_carousel #carouselExampleDark .carousel-indicators .active {
-  background-color: #de528c;
-}
 .main_categorias .contenedor_carousel #carouselExampleDark .carousel-inner .carousel-item img {
   margin: auto;
 }
@@ -495,13 +499,13 @@ h5 {
   }
 }
 .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-prev, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-next {
-  margin: 0;
+  background: transparent;
 }
-
-.main_niveles {
-  height: 70vh;
-  margin: auto;
-  padding: 0 10rem;
+.main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-prev .carousel-control-prev-icon, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-next .carousel-control-prev-icon, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-next .carousel-control-next-icon {
+  transition: transform 0.5s;
+}
+.main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-prev .carousel-control-prev-icon:hover, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-next .carousel-control-prev-icon:hover, .main_categorias .contenedor_carousel #carouselExampleDark .carousel-control-next .carousel-control-next-icon:hover {
+  transform: scale(2);
 }
 @media screen and (max-width: 1400px) {
   .main_niveles {
@@ -525,21 +529,6 @@ h5 {
 .main_niveles .tabs_niveles .nav-tabs .nav-link:hover {
   border: solid 1px #000000;
 }
-.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_celeste:hover {
-  background-color: #5ee7df;
-}
-.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_verde:hover {
-  background-color: #8de0a6;
-}
-.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_amarillo:hover {
-  background-color: #fcf09f;
-}
-.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_lila:hover {
-  background-color: #b490ca;
-}
-.main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_fucsia:hover {
-  background-color: #de528c;
-}
 @media screen and (max-width: 768px) {
   .main_niveles .tabs_niveles .nav-tabs .nav-link {
     padding: 0.6rem;
@@ -561,8 +550,6 @@ h5 {
 
 .main_tutoriales {
   height: 100%;
-  margin: auto;
-  padding: 0 10rem;
 }
 @media screen and (max-width: 1200px) {
   .main_tutoriales {
@@ -620,8 +607,6 @@ h5 {
 
 .main_cursos {
   height: 100%;
-  margin: auto;
-  padding: 0 10rem;
 }
 @media screen and (max-width: 1200px) {
   .main_cursos {
@@ -634,15 +619,6 @@ h5 {
 }
 .main_cursos .tabs_cursos .nav-tabs .nav-link:hover {
   border: solid 1px #000000;
-}
-.main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_verde:hover {
-  background-color: #8de0a6;
-}
-.main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_amarillo:hover {
-  background-color: #fcf09f;
-}
-.main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_fucsia:hover {
-  background-color: #de528c;
 }
 .main_cursos .cursos .galeria__contenedor .ficha {
   width: 24%;
@@ -676,10 +652,39 @@ h5 {
   transform: translate(-2%, -2%);
   font-size: 12px;
   font-weight: 800;
+  z-index: 1;
 }
 .main_cursos .cursos .galeria__contenedor .ficha img {
   width: 60%;
   height: auto;
+}
+.main_cursos .cursos .galeria__contenedor .ficha .img_curso:hover {
+  /* animación */
+  animation: shadow-pop-pink 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-pink {
+  0% {
+    box-shadow: 0 0 #de528c, 0 0 #de528c, 0 0 #de528c, 0 0 #de528c, 0 0 #de528c, 0 0 #de528c, 0 0 #de528c, 0 0 #de528c;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px -1px #de528c, -2px -2px #de528c, -3px -3px #de528c, -4px -4px #de528c, -5px -5px #de528c, -6px -6px #de528c, -7px -7px #de528c, -8px -8px #de528c;
+    transform: translateX(8px) translateY(8px);
+  }
+}
+.main_cursos .cursos .galeria__contenedor .ficha .img_taller:hover {
+  /* animación */
+  animation: shadow-pop-green 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-green {
+  0% {
+    box-shadow: 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6, 0 0 #8de0a6;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px -1px #8de0a6, -2px -2px #8de0a6, -3px -3px #8de0a6, -4px -4px #8de0a6, -5px -5px #8de0a6, -6px -6px #8de0a6, -7px -7px #8de0a6, -8px -8px #8de0a6;
+    transform: translateX(8px) translateY(8px);
+  }
 }
 .main_cursos .cursos .galeria__contenedor .ficha h5 {
   margin: 10px 0;
@@ -689,7 +694,6 @@ h5 {
   margin: 0;
 }
 .main_cursos .cursos .galeria__contenedor .ficha a:hover {
-  background-color: #8de0a6;
   color: #000000;
   padding: 0;
 }
@@ -701,11 +705,6 @@ h5 {
   margin-bottom: 2rem;
 }
 
-.main_contacto {
-  height: 70vh;
-  margin: auto;
-  padding: 0 10rem;
-}
 @media screen and (max-width: 1400px) {
   .main_contacto {
     height: 77vh;
@@ -736,6 +735,11 @@ h5 {
 }
 .main_contacto .contenedor .formulario {
   padding-right: 5rem;
+}
+@media screen and (max-width: 992px) {
+  .main_contacto .contenedor .formulario {
+    padding-right: 0;
+  }
 }
 .main_contacto .contenedor .formulario h3 {
   margin-bottom: 2rem;

@@ -4,18 +4,23 @@ $light_yellow: #fcf09f;
 $light_violet: #b490ca;
 $light_pink: #de528c;
 
+%fondo_celeste { background-color: $light_blue; }
+%fondo_verde { background-color: $light_green; }
+%fondo_amarillo { background-color: $light_yellow; }
+%fondo_lila { background-color: $light_violet; }
+%fondo_fucsia { background-color: $light_pink; }
 
 /*** FONDOS ***/
-.fondo_celeste { background-color: $light_blue; }
-.fondo_verde { background-color: $light_green; }
-.fondo_amarillo { background-color: $light_yellow; }
-.fondo_lila { background-color: $light_violet; }
-.fondo_fucsia { background-color: $light_pink; }
+.fondo_celeste { @extend %fondo_celeste; }
+.fondo_verde { @extend %fondo_verde; }
+.fondo_amarillo { @extend %fondo_amarillo; }
+.fondo_lila { @extend %fondo_lila; }
+.fondo_fucsia { @extend %fondo_fucsia; }
 
 
 /*** NIVELES ***/
-.muyFacil { background-color: $light_blue; color: #000000; }
-.facil, .taller { background-color: $light_green; color: #000000; }
-.neutro { background-color: $light_yellow; color: #000000; }
-.dificil { background-color: $light_violet; color: #ffffff; }
-.muyDificil, .curso { background-color: $light_pink; color: #ffffff; }
+.muyFacil { @extend %fondo_celeste; color: #000000; }
+.facil, .taller { @extend %fondo_verde; color: #000000; }
+.neutro { @extend %fondo_amarillo; color: #000000; }
+.dificil { @extend %fondo_lila; color: #ffffff; }
+.muyDificil, .curso { @extend %fondo_fucsia; color: #ffffff; }

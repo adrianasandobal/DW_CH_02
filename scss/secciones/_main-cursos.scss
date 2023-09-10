@@ -1,7 +1,6 @@
 .main_cursos {
+    @extend %main_secciones;
     height: 100%;
-    margin: auto;
-    padding: 0 10rem;
     @include mq (1200px) {
         padding: 3rem;
         border-top: solid 1px #000000;
@@ -14,13 +13,13 @@
                     border: solid 1px #000000;
                 }
                 &.fondo_verde:hover {
-                    background-color: $light_green;
+                    @extend %fondo_verde;
                 }
                 &.fondo_amarillo:hover {
-                    background-color: $light_yellow;
+                    @extend %fondo_amarillo;
                 }
                 &.fondo_fucsia:hover {
-                    background-color: $light_pink;
+                    @extend %fondo_fucsia;
                 }
             }
         }
@@ -52,10 +51,43 @@
                     transform: translate(-2%, -2%);
                     font-size: 12px;
                     font-weight: 800;
+                    z-index: 1;
                 }
                 img {
                     width: 60%;
                     height: auto;
+                }
+                .img_curso  {
+                    &:hover {
+                        /* animación */
+                        animation: shadow-pop-pink 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                        @keyframes shadow-pop-pink {
+                            0% {
+                              box-shadow: 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink, 0 0 $light_pink;
+                              transform: translateX(0) translateY(0);
+                            }
+                            100% {
+                              box-shadow: -1px -1px $light_pink, -2px -2px $light_pink, -3px -3px $light_pink, -4px -4px $light_pink, -5px -5px $light_pink, -6px -6px $light_pink, -7px -7px $light_pink, -8px -8px $light_pink;
+                              transform: translateX(8px) translateY(8px);
+                            }
+                        }
+                    }
+                }
+                .img_taller {
+                    &:hover {
+                        /* animación */
+                        animation: shadow-pop-green 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+                        @keyframes shadow-pop-green {
+                            0% {
+                              box-shadow: 0 0 $light_green, 0 0 $light_green, 0 0 $light_green, 0 0 $light_green, 0 0 $light_green, 0 0 $light_green, 0 0 $light_green, 0 0 $light_green;
+                              transform: translateX(0) translateY(0);
+                            }
+                            100% {
+                              box-shadow: -1px -1px $light_green, -2px -2px $light_green, -3px -3px $light_green, -4px -4px $light_green, -5px -5px $light_green, -6px -6px $light_green, -7px -7px $light_green, -8px -8px $light_green;
+                              transform: translateX(8px) translateY(8px);
+                            }
+                        }
+                    }
                 }
                 h5 {
                     margin: 10px 0;
@@ -64,7 +96,7 @@
                     text-decoration: underline;
                     margin: 0;
                     &:hover {
-                        background-color: $light_green;
+                        @extend %fondo_verde;
                         color: #000000;
                         padding: 0;
                     }

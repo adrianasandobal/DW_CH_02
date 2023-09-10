@@ -1,7 +1,5 @@
 .main_niveles {
-    height: 70vh;
-    margin: auto;
-    padding: 0 10rem;
+    @extend %main_secciones;
     @include mq (1400px) {
         height: 77vh;
     }
@@ -19,11 +17,11 @@
                 &:hover {
                     border: solid 1px #000000;
                 }
-                &.fondo_celeste:hover { background-color: $light_blue; }
-                &.fondo_verde:hover { background-color: $light_green; }
-                &.fondo_amarillo:hover { background-color: $light_yellow; }
-                &.fondo_lila:hover { background-color: $light_violet; }
-                &.fondo_fucsia:hover { background-color: $light_pink; }
+                &.fondo_celeste:hover { @extend %fondo_celeste; }
+                &.fondo_verde:hover { @extend %fondo_verde; }
+                &.fondo_amarillo:hover { @extend %fondo_amarillo; }
+                &.fondo_lila:hover { @extend %fondo_lila; }
+                &.fondo_fucsia:hover { @extend %fondo_fucsia; }
                 @include mq (768px) {
                     padding: 0.6rem;
                 }

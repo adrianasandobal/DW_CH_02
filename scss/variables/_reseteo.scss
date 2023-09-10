@@ -5,9 +5,13 @@
 
 body { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
 
-h1 {
+%titulos_Borel {
     font-family: 'Borel', cursive;
     font-weight: 300;
+}
+
+h1 {
+    @extend %titulos_Borel;
     @include mq (1400px) {
         font-size: 2rem;
     }
@@ -21,13 +25,11 @@ h2 {
 }
 
 h3 {
-    font-family: 'Borel', cursive;
-    font-weight: 300;
+    @extend %titulos_Borel;
 }
 
 h4 {
-    font-family: 'Borel', cursive;
-    font-weight: 300;
+    @extend %titulos_Borel;
     color: $light_pink;
 }
 
