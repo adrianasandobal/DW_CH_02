@@ -1,0 +1,21 @@
+$light_blue: #5ee7df;
+$light_green: #8de0a6;
+$light_yellow: #fcf09f;
+$light_violet: #b490ca;
+$light_pink: #de528c;
+
+
+/*** FONDOS ***/
+.fondo_celeste { background-color: $light_blue; }
+.fondo_verde { background-color: $light_green; }
+.fondo_amarillo { background-color: $light_yellow; }
+.fondo_lila { background-color: $light_violet; }
+.fondo_fucsia { background-color: $light_pink; }
+
+
+/*** NIVELES ***/
+.muyFacil { background-color: $light_blue; color: #000000; }
+.facil, .taller { background-color: $light_green; color: #000000; }
+.neutro { background-color: $light_yellow; color: #000000; }
+.dificil { background-color: $light_violet; color: #ffffff; }
+.muyDificil, .curso { background-color: $light_pink; color: #ffffff; }

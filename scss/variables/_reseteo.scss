@@ -1,0 +1,44 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body { background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%); }
+
+h1 {
+    font-family: 'Borel', cursive;
+    font-weight: 300;
+    @include mq (1400px) {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $light_pink;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Borel', cursive;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: 'Borel', cursive;
+    font-weight: 300;
+    color: $light_pink;
+}
+
+h5 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.center_xy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

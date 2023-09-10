@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Origamisando_Categorías</title>
+    <meta name="description" content="Diferentes categorías para crear figuras de origami">
+    <meta name="keywords" content="categorías de origami, aprender a doblar papel, instrucciones para doblar papel, figuras de origami, animales, decoración, halloween">
+    <link rel="shortcut icon" href="../recursos/img/logo_origami.png" type="image/x-icon">
+    <title>Categorías_Origamisando</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- LIBRERIA FONTAWESOME -->
-        <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     
@@ -67,15 +68,16 @@
     </header>
 
     <!-- main -->
-    <main class="main_seccion">
+    <main class="main_categorias">
         
         <h2 class="text-white mb-5">CATEGORÍAS</h2>
 
         <h3>Elegí una categoría para ver todas las figuras</h3>
         
-        <section class="carrusel">
+        <section class="contenedor_carousel">
         
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <!-- indicadores -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -84,7 +86,9 @@
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
+                <!-- figuras -->
                 <div class="carousel-inner">
+                    <!-- figura 1 -->
                     <div class="carousel-item active">
                         <img src="../recursos/img/figura_tigre.png" class="d-block w-30" alt="Tigre">
                         <div class="carousel-caption d-none d-md-block">
@@ -92,6 +96,7 @@
                             <p>Desde una hormiga hasta un elefante.</p>
                         </div>
                     </div>
+                    <!-- figura 2 -->
                     <div class="carousel-item">
                         <img src="../recursos/img/figura_parca.png" class="d-block w-30" alt="Parca">
                         <div class="carousel-caption d-none d-md-block">
@@ -99,6 +104,7 @@
                             <p>De todo para asustar.</p>
                         </div>
                     </div>
+                    <!-- figura 3 -->
                     <div class="carousel-item">
                         <img src="../recursos/img/figura_album.png" class="d-block w-30" alt="Álbum de fotos">
                         <div class="carousel-caption d-none d-md-block">
@@ -109,11 +115,11 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Anterior</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
         

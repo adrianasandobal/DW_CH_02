@@ -1,0 +1,46 @@
+.main_categorias {
+    height: 70vh;
+    margin: auto;
+    padding: 0 10rem;
+    @include mq (1400px) {
+        height: 77vh;
+    }
+    @include mq (1200px) {
+        padding: 3rem;
+        border-top: solid 1px #000000;
+    }
+    @include mq (768px) {
+        padding: 3rem 0;
+    }
+    h2, h3 {
+        @include mq (768px) {
+            padding: 0 3rem;
+        }
+    }
+    .contenedor_carousel {
+        display: flex;
+        justify-content: center;
+        #carouselExampleDark {
+            width: 100%;
+            background-color: #ffffff;
+            .carousel-indicators {
+                .active {
+                    background-color: $light_pink;
+                }
+            }
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        margin: auto;
+                        @include mq (768px) {
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev, .carousel-control-next {
+                margin: 0;
+            }
+        }
+    }
+}

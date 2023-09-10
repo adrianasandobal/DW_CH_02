@@ -1,0 +1,50 @@
+.main_tutoriales {
+    height: 100%;
+    margin: auto;
+    padding: 0 10rem;
+    @include mq (1200px) {
+        padding: 3rem;
+        border-top: solid 1px #000000;
+    }
+    .bloque_tutoriales {
+        margin-bottom: 50px;
+        h3 {
+            border-bottom: solid 1px #000000;
+        }
+        .contenedor_tutoriales {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            @include mq (1400px) {
+                grid-template-columns: auto auto;
+                grid-gap: 5px;
+            }
+            @include mq (992px) {
+                grid-template-columns: auto;
+            }
+            .ficha {
+                display: inline-block;
+                position: relative;
+                vertical-align: top;
+                padding-right: 20px;
+                .nivel {
+                    display: inline;
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+                    transform: translate(-2%, -2%);
+                }
+                iframe {
+                    width: 100%;
+                    height: auto;
+                    @include mq (992px) {
+                        height: 480px;
+                    }
+                }
+                .titulo {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

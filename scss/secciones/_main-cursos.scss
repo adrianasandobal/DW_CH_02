@@ -1,0 +1,82 @@
+.main_cursos {
+    height: 100%;
+    margin: auto;
+    padding: 0 10rem;
+    @include mq (1200px) {
+        padding: 3rem;
+        border-top: solid 1px #000000;
+    }
+    .tabs_cursos {
+        .nav-tabs {
+            .nav-link {
+                color: #000000;
+                &:hover {
+                    border: solid 1px #000000;
+                }
+                &.fondo_verde:hover {
+                    background-color: $light_green;
+                }
+                &.fondo_amarillo:hover {
+                    background-color: $light_yellow;
+                }
+                &.fondo_fucsia:hover {
+                    background-color: $light_pink;
+                }
+            }
+        }
+    }
+    .cursos {
+        .galeria__contenedor {
+            .ficha {
+                width: 24%;
+                display: inline-block;
+                position: relative;
+                vertical-align: top;
+                padding: 0 20px 20px 0;
+                overflow: hidden;
+                @include mq (1400px) {
+                    width: 33%;
+                    padding: 0 10px 20px 0;
+                }
+                @include mq (1200px) {
+                    width: 49%;
+                }
+                @include mq (768px) {
+                    width: 100%;
+                }
+                .curso, .taller {
+                    display: inline;
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+                    transform: translate(-2%, -2%);
+                    font-size: 12px;
+                    font-weight: 800;
+                }
+                img {
+                    width: 60%;
+                    height: auto;
+                }
+                h5 {
+                    margin: 10px 0;
+                }
+                a {
+                    text-decoration: underline;
+                    margin: 0;
+                    &:hover {
+                        background-color: $light_green;
+                        color: #000000;
+                        padding: 0;
+                    }
+                }
+                p {
+                    margin: 0;
+                }
+                .temas {
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

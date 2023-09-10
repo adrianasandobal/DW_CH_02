@@ -1,0 +1,31 @@
+/* VARIABLES / TIPOGRAFÍAS / COMPONENTES / RESETEO */
+@import "./variables/mixin-mq";
+@import "./variables/tipografias";
+@import "./variables/colores";
+@import "./componentes/enlaces";
+@import "./componentes/botones";
+@import "./variables/reseteo";
+
+/* SECCIONES */
+@import "./secciones/header";
+
+@import "./secciones/lista-categorias";
+
+@import "./secciones/main-index";
+@import "./secciones/main-categorias";
+@import "./secciones/main-niveles";
+@import "./secciones/main_tutoriales";
+@import "./secciones/main-cursos";
+@import "./secciones/_main-contacto";
+
+@import "./secciones/footer";
+
+
+/* Ayuda memoria: Tamaños de Media Queries*/
+/*
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+*/

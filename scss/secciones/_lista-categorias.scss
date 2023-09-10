@@ -1,0 +1,104 @@
+.container-fluid {
+    display: flex;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    @include mq (1400px) {
+        display: block;
+        height: 100%;
+    }
+    .aside {
+        flex: 0.1;
+        @include mq (1400px) {
+            display: flex;
+            flex-direction: column;
+            border-top: solid 1px;
+            padding: 0 30px;
+            height: 10vh;
+        }
+        h5 {
+            @include mq (1400px) {
+                text-align: left;
+                padding: 1.5rem 0 0 0;
+            }
+        }
+        .categorias {
+            @include mq (1400px) {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                height: 50px;
+            }
+            .categorias__flecha {
+                display: block;
+                width: 100%;
+                border-top: solid 1px;
+                border-bottom: solid 1px;
+                @include mq (1400px) {
+                    border-top: none;
+                    border-bottom: none;
+                    width: 3%;
+                }
+                .categorias__flecha__img {
+                    width: 25px;
+                }
+            }
+            .izquierda, .derecha {
+                @include mq (1400px) {
+                    transform: rotate(-90deg);
+                    width: 2rem;
+                    border: solid 1px;
+                    &:hover {
+                        background-color: $light_green;
+                    }
+                }
+            }
+            .categorias__nav {
+                @include mq (1400px) {
+                    width: 94%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap:nowrap;
+                }
+                .categorias__card {
+                    border: none;
+                    background: none;
+                    .card-link {
+                        text-decoration: none;
+                        color: #000000;
+                        &:hover {
+                            background-color: $light_green;
+                            border: none;
+                            /* animación */
+                            transition: background-color 0.3s;
+                            @include mq (1400px) {
+                                background: none;
+                            }
+                        }
+                        .categorias__img {
+                            width: 3rem;
+                            margin: auto;
+                            @include mq (1400px) {
+                                &:hover {
+                                    background-color: $light_green;
+                                    border-radius: 100%;
+                                }
+                            }
+                            @include mq (992px) {
+                                width: 2rem;
+                            }
+                        }
+                        .categorias__nombre {
+                            text-transform: uppercase;
+                            @include mq (1400px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

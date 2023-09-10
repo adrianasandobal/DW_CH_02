@@ -1,0 +1,18 @@
+button, .boton_input {
+    border: none;
+    background-color: $light_pink;
+    color: #ffffff;
+    padding: 0.5rem 5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    /* animación */
+    transition: transform 0.5s, background-color 0.5s, color 0.5s;
+    &:hover {
+        background-color: $light_green;
+        color: #000000;
+        /* animación */
+        transform: scale(1.1);
+    }
+}
