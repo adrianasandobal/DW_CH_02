@@ -64,7 +64,7 @@ a:active {
   border-bottom: solid 5px #000000;
 }
 
-button, .boton_input {
+button, .boton {
   border: none;
   background-color: #de528c;
   color: #ffffff;
@@ -76,14 +76,14 @@ button, .boton_input {
   /* animación */
   transition: transform 0.5s, background-color 0.5s, color 0.5s;
 }
-button:hover, .boton_input:hover {
+button:hover, .boton:hover {
   background-color: #8de0a6;
   color: #000000;
   /* animación */
   transform: scale(1.1);
 }
 
-.boton_input {
+.boton {
   margin-top: 0;
 }
 
