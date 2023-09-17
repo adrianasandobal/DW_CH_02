@@ -35,6 +35,11 @@
                 width: 100%;
                 border-top: solid 1px;
                 border-bottom: solid 1px;
+                &:hover {
+                    @extend %fondo_verde;
+                    /* animación */
+                    transition: background-color 0.3s;
+                }
                 @include mq (1400px) {
                     border-top: none;
                     border-bottom: none;

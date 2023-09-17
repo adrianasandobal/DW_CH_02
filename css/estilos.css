@@ -5,7 +5,7 @@
   background-color: #5ee7df;
 }
 
-.main_cursos .cursos .galeria__contenedor .ficha a:hover, .main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_verde:hover, .main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_verde:hover, .container-fluid .aside .categorias .categorias__nav .categorias__card .card-link:hover, .facil, .taller, .fondo_verde {
+.main_cursos .cursos .galeria__contenedor .ficha a:hover, .main_cursos .tabs_cursos .nav-tabs .nav-link.fondo_verde:hover, .main_niveles .tabs_niveles .nav-tabs .nav-link.fondo_verde:hover, .container-fluid .aside .categorias .categorias__nav .categorias__card .card-link:hover, .container-fluid .aside .categorias .categorias__flecha:hover, .facil, .taller, .fondo_verde {
   background-color: #8de0a6;
 }
 
@@ -324,6 +324,10 @@ h5 {
   width: 100%;
   border-top: solid 1px;
   border-bottom: solid 1px;
+}
+.container-fluid .aside .categorias .categorias__flecha:hover {
+  /* animación */
+  transition: background-color 0.3s;
 }
 @media screen and (max-width: 1400px) {
   .container-fluid .aside .categorias .categorias__flecha {
