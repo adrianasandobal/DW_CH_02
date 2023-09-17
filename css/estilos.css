@@ -771,6 +771,44 @@ h5 {
 
 .footer {
   height: 10vh;
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px #000000;
+}
+.footer .redes {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1400px) {
+  .footer .redes {
+    width: 40vw;
+  }
+}
+.footer .redes a {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.footer .redes a:hover {
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+.footer .redes a i {
+  font-size: 1.5em;
+  color: #5ee7df;
+  --fa-animation-duration: 0s;
+}
+.footer .redes a i:hover {
+  --fa-animation-duration: 2s;
+  transition: 0.4s;
+}
+
+.no_border_top {
+  border-top: none;
 }
 
 /* Ayuda memoria: Tamaños de Media Queries*/

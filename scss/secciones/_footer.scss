@@ -1,3 +1,39 @@
 .footer {
     height: 10vh;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px #000000;
+    .redes {
+        width: 20vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mq (1400px) {
+            width: 40vw;
+        }
+        a {
+            width: 2.5em;
+            height: 2.5em;
+            background-color: #000000;
+            border-radius: 50%;
+            &:hover {
+                padding-bottom: 0px;
+                border-bottom: 0px;
+            }
+            i {
+                font-size: 1.5em;
+                color: $light_blue;
+                --fa-animation-duration: 0s;
+                &:hover {
+                    --fa-animation-duration: 2s;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+.no_border_top {
+    border-top: none;
 }
