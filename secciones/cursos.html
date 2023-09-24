@@ -21,50 +21,38 @@
 
     <!-- header -->
     <header class="header center_xy">
-        <nav class="navbar sticky-top navbar-expand-lg">
-            <!-- logo -->
-            <a class="navbar-brand" href="../index.html">
+        <nav class="header__container nav" id="nav">
+            <a class="nav__logo" href="../index.html">
                 <img src="../recursos/img/logo_origami.png" alt="Logo Origamisando">
                 <h1>Origamisando</h1>
             </a>
-            <!-- menú hamburguesa -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- menú horizontal -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./categorias.html">CATEGORÍAS</a>
-                    </li>
-                    
-                    <li class="nav-separador"> | </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./niveles.html">NIVELES</a>
-                    </li>
-                    
-                    <li class="nav-separador"> | </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tutoriales.html">TUTORIALES</a>
-                    </li>
-                    
-                    <li class="nav-separador"> | </li>
-                    
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./cursos.html">CURSOS</a>
-                    </li>
-                    
-                    <li class="nav-separador"> | </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
+
+            <a href="#nav" class="nav__hamburger">
+                <i class="fa-solid fa-bars nav__icon"></i>
+            </a>
+
+            <a href="#" class="nav__close">
+                <i class="fa-solid fa-xmark nav__icon"></i>
+            </a>
+
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="./categorias.html">CATEGORÍAS</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./niveles.html">NIVELES</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./tutoriales.html">TUTORIALES</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./cursos.html">CURSOS</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+
         </nav>
     </header>
 

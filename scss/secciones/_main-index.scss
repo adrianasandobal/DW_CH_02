@@ -1,8 +1,8 @@
 .main, .galeria {
-    height: 70vh;
+    min-height: 70vh;
     flex: 0.9;
     padding: 10px 40px;
-    @include mq (1400px) {
+    @include mq (992px) {
         height: 100%;
     }
     .galeria__filtro {
